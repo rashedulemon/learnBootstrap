@@ -1,0 +1,13 @@
+.hover-white:hover {
+    color: #6c757d;
+    background-color: #343a40;
+}
+
+.carousel-item {
+    height: 91vh;
+}
+
+.car-hw {
+    height: 50px;
+    width: 50px;
+}
