@@ -1,3 +1,11 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --brd-color: #46C6EA;
+    --brd-color-dark: #1fa9cf;
+}
+
 .hover-white:hover {
     color: #6c757d;
     background-color: #343a40;
@@ -10,4 +18,41 @@
 .car-hw {
     height: 50px;
     width: 50px;
+}
+
+.btn-info {
+    background-color: var(--brd-color);
+}
+.btn-info:hover {
+    background-color: var(--brd-color-dark);
+    color: white;
+}
+
+/* Hero text */
+
+.hero-heading {
+    font-family: "Poppins",sans-serif;
+}
+
+h3 {
+    font-family: "Poppins",sans-serif;
+}
+
+.hero-des>h3>span {
+    color: var(--brd-color) ;
+}
+
+.hero-text {
+    font-family: "Poppins",sans-serif;
+}
+
+.hero-des {
+    margin-top: 8rem;
+}
+
+
+
+/* Hero image */
+.hero-image {
+   width: 500px;
 }
