@@ -5,26 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div h1 {
-            color: green;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        @media (min-width:500px) {
-            div h1 {
-                color: blue;
-            }
+        .container {
+            float: left;
+            /* display: flex; */
+        }
+        .con-menu {
+            float: left;
+            /* width: 100%; */
+        }
+        .con {
+            background-color: gainsboro;
+            width: 100px;
+            height: 2rlh;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+            line-height: 2rlh;
         }
 
-        /* @media print {
-            div h1 {
-                color: red ;
+        .content-brif {
+            width: 50%;
+            margin-left: 20px;
+            float: left;
+        }
+
+        @media all and (max-width:300px) {
+            .con , .content-brif , .con-menu {
+                width: 100%;
+                font-family: sans-serif;
             }
-        } */
+            .con {
+                background-color: blueviolet;
+            }
+        }
+    
     </style>
 </head>
 <body>
-    <div>
-        <h1>I'm Blue When display size 500px I become Green.</h1>
+    <div class="container">
+        <div class="con-menu"> 
+            <div class="con">Content 1</div>
+            <div class="con">Content 2</div>
+            <div class="con">Content 3</div>
+        </div>
+        <div class="content-brif">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam dicta, expedita debitis corrupti officia nisi iusto numquam consectetur a? Distinctio velit cumque numquam pariatur inventore tempore harum, amet vero? Perspiciatis qui numquam corporis necessitatibus ipsum, rerum deserunt modi! Laboriosam earum ab illum vitae! Reiciendis commodi accusamus debitis tenetur neque.</p>
+        </div>
     </div>
 </body>
 </html>
