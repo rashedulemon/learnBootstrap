@@ -27,10 +27,48 @@ console.log(firstName);
 console.log(isSubmit);
 
 
-let htxt = document.getElementById('hText');
 // let cbtn = documentg.getElementById('btn');
 
+
+
+
+
+
+let htxt = document.getElementById('hText');
 function changeText() {
-    htxt.innerText = 'Hello Word';
+    htxt.innerText = Date();
     console.log('Button Clicked');
+
 }
+
+// Day 2
+
+z = multi(3,49);
+
+console.log(z);
+
+function multi(x,y) {
+    let c = x*y;
+    return c;
+}
+
+greeting()
+
+let x = 21;
+
+greeting(x);
+
+function greeting(a) {
+    // const time = new Date().getHours();
+
+    if (a<10) {
+        console.log('a is under 0 to 10')
+    } 
+    else if (a<20) {
+        console.log('a is under 10 to 20')
+    }
+    else{
+        console.log('Greter then 20')
+    }
+}
+
