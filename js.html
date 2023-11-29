@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="document.getElementById('hText').innerHTML = 'I say do not click me'">
     <h1 id="hText">Click the button </h1>
-    <button type="button" id="btn" onclick="changeText()">Don't Click me</button>
+    <button type="button" id="btn" onload="this.innerHTML = 'I say do not click me'">Don't Click me</button>
     <script src="./js/script.js"></script>
 </body>
 </html>
